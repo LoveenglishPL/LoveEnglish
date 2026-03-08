@@ -1,0 +1,2065 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoveEnglish.PL AI - Master English, Master the Future</title>
+<meta name="description" content="Learn English with AI-powered tools designed for the modern world. Master communication skills while adapting to technological change.">
+<meta property="og:title" content="LoveEnglish.PL AI - Master English, Master the Future">
+<meta property="og:description" content="Learn English with AI-powered tools designed for the modern world. Master communication skills while adapting to technological change.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://loveenglish.pl">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Security Headers -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+<style>
+:root {
+--energy-orange: #FF6B35;
+--future-cyan: #00CFC8;
+--deep-space: #0F1033;
+--star-purple: #6A0DAD;
+--poland-red: #DC143C;
+--uk-blue: #012169;
+--light-accent: #E0F7FA;
+--success-green: #4CAF50;
+--warning-yellow: #FFC107;
+--error-red: #F44336;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border="border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg, var(--deep-space) 0%, #1a1a40 100%);
+color: white;
+line-height: 1.6;
+}
+
+header {
+background: rgba(15, 16, 51, 0.95);
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 3px solid;
+border-image: linear-gradient(to right, var(--uk-blue), var(--poland-red)) 1;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: 800;
+background: linear-gradient(to right, var(--future-cyan), var(--energy-orange));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+.logo span {
+color: var(--poland-red);
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+}
+
+.nav-links li {
+position: relative;
+padding: 0 1.5rem;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+color: var(--future-cyan);
+}
+
+.dropdown-menu, .dropdown-sub-menu {
+display: none;
+position: absolute;
+background-color: var(--deep-space);
+list-style: none;
+min-width: 220px;
+top: 100%;
+left: 0;
+border: 1px solid var(--future-cyan);
+border-radius: 8px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+display: block;
+}
+
+.dropdown-sub:hover .dropdown-sub-menu,
+.dropdown-sub:focus-within .dropdown-sub-menu {
+display: block;
+left: 100%;
+top: 0;
+}
+
+.dropdown-menu li, .dropdown-sub-menu li {
+padding: 0.8rem 1rem;
+border-bottom: 1px solid rgba(0, 207, 200, 0.1);
+}
+
+.dropdown-menu li:last-child, .dropdown-sub-menu li:last-child {
+border-bottom: none;
+}
+
+.dropdown-menu li:hover, .dropdown-sub-menu li:hover {
+background-color: rgba(0, 207, 200, 0.1);
+}
+
+.hero {
+text-align: center;
+padding: 5rem 2rem;
+background: radial-gradient(circle, rgba(0,207,200,0.1) 0%, rgba(15,16,51,0) 70%);
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background:
+radial-gradient(circle at 20% 30%, rgba(255,107,53,0.1) 0%, transparent 20%),
+radial-gradient(circle at 80% 70%, rgba(106,13,173,0.1) 0%, transparent 20%);
+pointer-events: none;
+}
+
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+background: linear-gradient(to right, var(--energy-orange), var(--future-cyan));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+from { text-shadow: 0 0 10px rgba(0, 207, 200, 0.5); }
+to { text-shadow: 0 0 20px rgba(255, 107, 53, 0.8), 0 0 30px rgba(0, 207, 200, 0.6); }
+}
+
+.hero p {
+font-size: 1.2rem;
+max-width: 700px;
+margin: 0 auto 2rem;
+color: var(--light-accent);
+}
+
+.cta-button {
+background: linear-gradient(45deg, var(--uk-blue), var(--poland-red));
+color: white;
+border: none;
+padding: 1rem 2rem;
+font-size: 1.1rem;
+font-weight: 600;
+border-radius: 50px;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 4px 15px rgba(1, 33, 105, 0.3);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+}
+
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin: 3rem 0 2rem;
+color: var(--future-cyan);
+position: relative;
+}
+
+.section-title::after {
+content: "";
+display: block;
+width: 100px;
+height: 3px;
+background: linear-gradient(to right, var(--energy-orange), var(--future-cyan));
+margin: 0.5rem auto;
+border-radius: 2px;
+}
+
+.course-catalog {
+display: grid;
+grid-template-columns: repeat(4, minmax(250px, 1fr));
+gap: 2rem;
+padding: 2rem;
+max-width: 1300px;
+margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+.course-catalog {
+grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+}
+
+@media (max-width: 768px) {
+.course-catalog {
+grid-template-columns: 1fr;
+}
+}
+
+.phase-card {
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+padding: 2rem;
+border: 1px solid rgba(0, 207, 200, 0.2);
+backdrop-filter: blur(10px);
+transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+cursor: pointer;
+}
+
+.phase-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+border-color: var(--future-cyan);
+}
+
+.phase-card.expanded {
+border-color: var(--energy-orange);
+box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
+}
+
+.phase-card h3 {
+color: var(--energy-orange);
+margin-bottom: 1rem;
+font-size: 1.5rem;
+}
+
+.phase-card .summary-text {
+color: var(--light-accent);
+margin-bottom: 1rem;
+font-size: 1rem;
+}
+
+.phase-card .full-details {
+display: none;
+margin-top: 1.5rem;
+padding-top: 1.5rem;
+border-top: 1px solid rgba(0, 207, 200, 0.2);
+}
+
+.phase-card.expanded .full-details {
+display: block;
+animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.phase-card ul {
+list-style-type: none;
+padding-left: 1rem;
+}
+
+.phase-card li {
+margin-bottom: 0.5rem;
+position: relative;
+}
+
+.phase-card li::before {
+content: "▹";
+color: var(--future-cyan);
+margin-right: 0.5rem;
+}
+
+.classroom-mockup {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+padding: 2rem;
+margin: 2rem auto;
+max-width: 1200px;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+border: 1px solid rgba(0, 207, 200, 0.2);
+}
+
+.whiteboard-panel {
+grid-column: 1 / 3;
+min-height: 200px;
+background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+border: 3px dashed #ccc;
+color: #333;
+padding: 1.5rem;
+border-radius: 10px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+font-style: normal;
+box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.whiteboard-panel h3 {
+color: var(--uk-blue);
+margin-bottom: 0.5rem;
+}
+
+.content-panel, .chat-panel {
+padding: 1rem;
+background: rgba(15, 16, 51, 0.7);
+border-radius: 10px;
+}
+
+.content-panel h3, .chat-panel h3 {
+color: var(--future-cyan);
+margin-bottom: 1rem;
+}
+
+#courseSelector, #questionContainer {
+width: 100%;
+margin-bottom: 1rem;
+}
+
+select, textarea, button, input {
+padding: 0.8rem;
+border: 1px solid var(--future-cyan);
+border-radius: 8px;
+background: rgba(15, 16, 51, 0.8);
+color: white;
+font-family: inherit;
+}
+
+select:focus, textarea:focus, input:focus {
+outline: 2px solid var(--energy-orange);
+}
+
+textarea {
+width: 100%;
+resize: vertical;
+min-height: 100px;
+}
+
+.classroom-tools {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+gap: 10px;
+margin-top: 1rem;
+padding-top: 1rem;
+border-top: 1px solid rgba(0, 207, 200, 0.2);
+}
+
+.tool-btn {
+background: rgba(0, 207, 200, 0.1);
+border: 1px solid var(--future-cyan);
+color: var(--future-cyan);
+padding: 0.5rem;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+font-size: 0.9rem;
+}
+
+.tool-btn:hover {
+background: var(--future-cyan);
+color: var(--deep-space);
+}
+
+.participant-list {
+margin-top: 1rem;
+max-height: 150px;
+overflow-y: auto;
+}
+
+.participant {
+display: flex;
+align-items: center;
+padding: 0.5rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 5px;
+margin-bottom: 0.5rem;
+}
+
+.participant-avatar {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: var(--energy-orange);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 10px;
+font-weight: bold;
+}
+
+.participant-status {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: var(--success-green);
+margin-left: auto;
+}
+
+.pricing {
+padding: 3rem 2rem;
+text-align: center;
+}
+
+.pricing-cards {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+flex-wrap: wrap;
+margin-top: 2rem;
+}
+
+.pricing-card {
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+padding: 2rem;
+border: 1px solid transparent;
+transition: all 0.3s ease;
+min-width: 220px;
+max-width: 280px;
+display: flex;
+flex-direction: column;
+}
+
+.pricing-card:hover {
+transform: translateY(-5px);
+border-color: var(--future-cyan);
+}
+
+.pricing-card.featured {
+border-color: var(--energy-orange);
+transform: scale(1.05);
+box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
+.pricing-card h3 {
+color: var(--future-cyan);
+margin-bottom: 0.5rem;
+font-size: 1.3rem;
+}
+
+.price {
+font-size: 2rem;
+font-weight: bold;
+margin: 0.5rem 0;
+color: var(--energy-orange);
+}
+
+.price span {
+font-size: 1rem;
+color: var(--light-accent);
+}
+
+.features {
+list-style: none;
+margin: 1rem 0;
+text-align: left;
+flex-grow: 1;
+}
+
+.features li {
+padding: 0.5rem 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+font-size: 0.9rem;
+}
+
+.features li:last-child {
+border-bottom: none;
+}
+
+.features li::before {
+content: "✓ ";
+color: var(--success-green);
+}
+
+.testimonials {
+padding: 3rem 2rem;
+background: rgba(0, 207, 200, 0.05);
+margin: 3rem 0;
+}
+
+.testimonial-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin-top: 2rem;
+}
+
+.testimonial-card {
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+padding: 1.5rem;
+border: 1px solid rgba(0, 207, 200, 0.2);
+}
+
+.testimonial-card h4 {
+color: var(--energy-orange);
+margin-bottom: 0.5rem;
+}
+
+.faq {
+padding: 3rem 2rem;
+}
+
+.faq-item {
+margin-bottom: 1.5rem;
+}
+
+.faq-question {
+font-weight: bold;
+color: var(--future-cyan);
+cursor: pointer;
+padding: 1rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 8px;
+}
+
+.faq-answer {
+padding: 1rem;
+background: rgba(15, 16, 51, 0.5);
+border-radius: 0 0 8px 8px;
+display: none;
+}
+
+.faq-item.active .faq-answer {
+display: block;
+}
+
+.about-section {
+padding: 3rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.about-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+align-items: center;
+}
+
+.about-image {
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-text h3 {
+color: var(--future-cyan);
+margin-bottom: 1rem;
+}
+
+footer {
+text-align: center;
+padding: 2rem;
+border-top: 3px solid;
+border-image: linear-gradient(to right, var(--poland-red), var(--uk-blue)) 1;
+margin-top: 2rem;
+background: rgba(15, 16, 51, 0.9);
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin: 1rem 0;
+}
+
+.footer-links a {
+color: var(--future-cyan);
+text-decoration: none;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+.flag-strip {
+height: 5px;
+background: linear-gradient(to right, var(--uk-blue) 0%, var(--uk-blue) 50%, var(--poland-red) 50%, var(--poland-red) 100%);
+margin-bottom: 1rem;
+}
+
+/* Accessibility and Mobile Enhancements */
+.skip-link {
+position: absolute;
+top: -40px;
+left: 6px;
+background: var(--energy-orange);
+color: white;
+padding: 8px;
+text-decoration: none;
+border-radius: 4px;
+transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+top: 6px;
+}
+
+.loading {
+display: inline-block;
+width: 20px;
+height: 20px;
+border: 3px solid rgba(255,255,255,.3);
+border-radius: 50%;
+border-top-color: var(--future-cyan);
+animation: spin 1s ease-in-out infinite;
+margin-left: 10px;
+}
+
+@keyframes spin {
+to { transform: rotate(360deg); }
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+.menu-toggle span {
+width: 25px;
+height: 3px;
+background: white;
+margin: 3px 0;
+transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+}
+
+.hero h1 {
+font-size: 2rem;
+}
+
+.classroom-mockup {
+grid-template-columns: 1fr;
+}
+
+.whiteboard-panel {
+grid-column: 1;
+height: 150px;
+}
+
+.pricing-cards {
+flex-direction: column;
+align-items: center;
+}
+
+.pricing-card.featured {
+transform: scale(1);
+}
+
+.course-catalog {
+grid-template-columns: 1fr;
+}
+
+.about-content {
+grid-template-columns: 1fr;
+}
+
+.footer-links {
+flex-direction: column;
+gap: 0.5rem;
+}
+}
+
+@media (max-width: 768px) {
+.menu-toggle {
+display: flex;
+}
+
+.nav-links.active {
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background: var(--deep-space);
+padding: 1rem 0;
+}
+}
+
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+z-index: 1000;
+align-items: center;
+justify-content: center;
+}
+
+.modal-content {
+background: var(--deep-space);
+padding: 2rem;
+border-radius: 15px;
+max-width: 500px;
+width: 90%;
+border: 1px solid var(--future-cyan);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.close-modal {
+font-size: 1.5rem;
+cursor: pointer;
+color: white;
+}
+
+.form-group {
+margin-bottom: 1rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group select {
+width: 100%;
+padding: 0.8rem;
+border: 1px solid var(--future-cyan);
+border-radius: 8px;
+background: rgba(15, 16, 51, 0.8);
+color: white;
+}
+
+.form-actions {
+display: flex;
+justify-content: flex-end;
+gap: 1rem;
+margin-top: 1.5rem;
+}
+
+.notification {
+position: fixed;
+top: 20px;
+right: 20px;
+padding: 1rem;
+border-radius: 8px;
+background: var(--success-green);
+color: white;
+z-index: 1001;
+display: none;
+}
+
+.notification.error {
+background: var(--error-red);
+}
+
+/* Legal Document Styles */
+.legal-document {
+max-width: 800px;
+margin: 0 auto;
+padding: 2rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+margin-top: 2rem;
+margin-bottom: 2rem;
+overflow-y: auto;
+max-height: 70vh;
+}
+
+.legal-document h1 {
+color: var(--future-cyan);
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.legal-document h2 {
+color: var(--energy-orange);
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+.legal-document h3 {
+color: var(--light-accent);
+margin-top: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.legal-document p {
+margin-bottom: 1rem;
+line-height: 1.6;
+}
+
+.legal-document ul {
+margin-left: 2rem;
+margin-bottom: 1rem;
+}
+
+.legal-document li {
+margin-bottom: 0.5rem;
+}
+
+.back-button {
+display: inline-block;
+background: var(--future-cyan);
+color: var(--deep-space);
+padding: 0.5rem 1rem;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+margin-bottom: 2rem;
+}
+
+.back-button:hover {
+background: var(--energy-orange);
+color: white;
+}
+
+/* Contact links styling */
+.contact-link {
+color: var(--light-accent) !important;
+text-decoration: none;
+}
+
+.contact-link:hover {
+color: var(--future-cyan) !important;
+text-decoration: underline;
+}
+
+/* Form validation styles */
+.error-message {
+color: var(--error-red);
+font-size: 0.85rem;
+margin-top: 0.25rem;
+display: none;
+}
+
+.field-error {
+border-color: var(--error-red) !important;
+}
+
+.form-group.error .error-message {
+display: block;
+}
+
+/* Recording indicator */
+.recording-indicator {
+display: inline-block;
+width: 12px;
+height: 12px;
+background: var(--error-red);
+border-radius: 50%;
+margin-right: 8px;
+animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.5; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="notification" id="notification"></div>
+
+<!-- Registration Modal -->
+<div class="modal" id="registrationModal">
+<div class="modal-content">
+<div class="modal-header">
+<h2>Register for LoveEnglish.PL AI</h2>
+<span class="close-modal" tabindex="0" role="button" aria-label="Close registration form">&times;</span>
+</div>
+<form id="registrationForm" novalidate>
+<div class="form-group">
+<label for="regName">Full Name *</label>
+<input type="text" id="regName" required aria-required="true">
+<div class="error-message" id="nameError">Please enter your full name</div>
+</div>
+<div class="form-group">
+<label for="regEmail">Email Address *</label>
+<input type="email" id="regEmail" required aria-required="true">
+<div class="error-message" id="emailError">Please enter a valid email address</div>
+</div>
+<div class="form-group">
+<label for="regPassword">Password *</label>
+<input type="password" id="regPassword" required minlength="12" aria-required="true">
+<div class="error-message" id="passwordError">Password must be at least 12 characters with uppercase, lowercase, number, and special character</div>
+</div>
+<div class="form-group">
+<label for="regPlan">Select Plan</label>
+<select id="regPlan">
+<option value="free">Free 25-Min Trial ($0)</option>
+<option value="single">Single Lesson ($30)</option>
+<option value="package4">4 Lesson Package ($110)</option>
+<option value="package16">16 Lesson Package ($400)</option>
+</select>
+</div>
+<div class="form-group">
+<label for="regPaymentMethod">Payment Method</label>
+<select id="regPaymentMethod">
+<option value="stripe">Credit Card (Stripe)</option>
+<option value="paypal">PayPal</option>
+<option value="bank">Bank Transfer</option>
+</select>
+</div>
+<div class="form-group">
+<label>
+<input type="checkbox" id="regTerms" required aria-required="true">
+<span>I agree to the <a href="#privacy-modal" class="contact-link">Privacy Policy</a> and <a href="#terms-modal" class="contact-link">Terms of Service</a> *</span>
+</label>
+<div class="error-message" id="termsError">You must agree to the terms</div>
+</div>
+<div class="form-actions">
+<button type="submit" class="cta-button" id="submitRegistration">Register Now</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div class="modal" id="privacyModal">
+<div class="modal-content" style="max-width: 800px; width: 95%;">
+<div class="modal-header">
+<h2>Privacy Policy</h2>
+<span class="close-modal" tabindex="0" role="button" aria-label="Close privacy policy">&times;</span>
+</div>
+<div class="legal-document" id="privacyContent">
+<!-- Privacy Policy content will be loaded here -->
+</div>
+</div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div class="modal" id="termsModal">
+<div class="modal-content" style="max-width: 800px; width: 95%;">
+<div class="modal-header">
+<h2>Terms of Service</h2>
+<span class="close-modal" tabindex="0" role="button" aria-label="Close terms of service">&times;</span>
+</div>
+<div class="legal-document" id="termsContent">
+<!-- Terms of Service content will be loaded here -->
+</div>
+</div>
+</div>
+
+<!-- Contact Us Modal -->
+<div class="modal" id="contactModal">
+<div class="modal-content">
+<div class="modal-header">
+<h2>Contact Us</h2>
+<span class="close-modal" tabindex="0" role="button" aria-label="Close contact form">&times;</span>
+</div>
+<div style="padding: 2rem;">
+<h3>Get in Touch</h3>
+<p>We'd love to hear from you. Here's how you can reach us:</p>
+<ul>
+<li><strong>Contact Person:</strong> Customer Support Team</li>
+<li><strong>Email:</strong> <a href="mailto:support@loveenglish.pl" class="contact-link">support@loveenglish.pl</a></li>
+<li><strong>Phone:</strong> <a href="tel:+48221234567" class="contact-link">+48 22 123 4567</a></li>
+<li><strong>Address:</strong> Warsaw, Poland</li>
+<li><strong>Bank Account Details:</strong>
+Available upon request via secure channels
+</li>
+</ul>
+<p>Our typical response time is within 24-48 hours.</p>
+</div>
+</div>
+</div>
+
+<header>
+<div class="logo">LoveEnglish.<span>PL</span> AI</div>
+<div class="menu-toggle" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<ul class="nav-links" id="nav-links" role="navigation">
+<li><a href="#home">Home</a></li>
+<li class="dropdown">
+<a href="#" aria-haspopup="true" aria-expanded="false">Courses ▼</a>
+<ul class="dropdown-menu" id="coursesDropdown" role="menu">
+<!-- Populated by JavaScript -->
+</ul>
+</li>
+<li><a href="#catalog">Learning Path</a></li>
+<li><a href="#classroom">Classroom</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</header>
+
+<main id="main-content">
+<section class="hero" id="home">
+<h1>Your Future Speaks English</h1>
+<p>Adapt to the AI revolution. Learn the language of technology and opportunity while mastering essential life skills for the modern world.</p>
+<button class="cta-button" id="startTrialBtn">Start Your Free 25-Min Trial</button>
+</section>
+
+<h2 class="section-title" id="catalog">Our Learning Path</h2>
+<section class="course-catalog">
+<div class="phase-card" data-level="A1" tabindex="0" role="button" aria-expanded="false">
+<h3>A1 Level: Foundations</h3>
+<p class="summary-text">Building basic AI literacy and fundamental English communication skills.</p>
+<div class="full-details">
+<ul>
+<li><strong>16 Themes:</strong> AI Basics, Prompting, Job Search, Interviews, Business Ideas, Health Info, Finance, Learning, Creativity, Digital Well-being, Future Work, Community, Ethics, Content Creation, Language Learning, AI Limitations</li>
+<li><strong>32 Lessons:</strong> 2 lessons per theme focusing on vocabulary, grammar, and basic AI interaction</li>
+<li><strong>Focus:</strong> Basic commands, simple questions, and foundational AI understanding</li>
+<li><strong>Duration:</strong> 8-12 weeks</li>
+<li><strong>Outcome:</strong> CEFR A1 Certification</li>
+</ul>
+</div>
+</div>
+<div class="phase-card" data-level="A2" tabindex="0" role="button" aria-expanded="false">
+<h3>A2 Level: Everyday Application</h3>
+<p class="summary-text">Applying AI tools to practical daily situations and improving conversational English.</p>
+<div class="full-details">
+<ul>
+<li><strong>16 Themes:</strong> Same 16 topics with increased complexity</li>
+<li><strong>32 Lessons:</strong> Intermediate applications and more detailed interactions</li>
+<li><strong>Focus:</strong> Follow-up questions, checking understanding, and practical AI usage</li>
+<li><strong>Duration:</strong> 8-12 weeks</li>
+<li><strong>Outcome:</strong> CEFR A2 Certification</li>
+</ul>
+</div>
+</div>
+<div class="phase-card" data-level="B1" tabindex="0" role="button" aria-expanded="false">
+<h3>B1 Level: Professional Development</h3>
+<p class="summary-text">Using AI for professional tasks and strategic English communication.</p>
+<div class="full-details">
+<ul>
+<li><strong>16 Themes:</strong> Advanced applications across all topics</li>
+<li><strong>32 Lessons:</strong> Complex scenarios and professional contexts</li>
+<li><strong>Focus:</strong> Setting context, challenging AI responses, tone specification, and iterative refinement</li>
+<li><strong>Duration:</strong> 10-14 weeks</li>
+<li><strong>Outcome:</strong> CEFR B1 Certification</li>
+</ul>
+</div>
+</div>
+<div class="phase-card" data-level="B2" tabindex="0" role="button" aria-expanded="false">
+<h3>B2 Level: Strategic Mastery</h3>
+<p class="summary-text">Advanced AI integration and sophisticated English communication.</p>
+<div class="full-details">
+<ul>
+<li><strong>16 Themes:</strong> Expert-level applications and strategic implementation</li>
+<li><strong>32 Lessons:</strong> Complex problem-solving and critical analysis</li>
+<li><strong>Focus:</strong> Persona crafting, bias analysis, advanced formatting, and ethical considerations</li>
+<li><strong>Duration:</strong> 10-14 weeks</li>
+<li><strong>Outcome:</strong> CEFR B2 Certification</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="testimonials">
+<h2 class="section-title">Student Success Stories</h2>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<h4>Anna K., Warsaw</h4>
+<p>"LoveEnglish.PL AI helped me land my dream job at a tech startup. The AI interview practice was invaluable!"</p>
+</div>
+<div class="testimonial-card">
+<h4>Marcin T., Krakow</h4>
+<p>"As a developer, I needed to improve my English for international projects. This platform made it easy and engaging."</p>
+</div>
+<div class="testimonial-card">
+<h4>Katarzyna L., Gdansk</h4>
+<p>"The virtual classroom feels like real interaction with AI tutors. I've progressed faster than I expected."</p>
+</div>
+</div>
+</section>
+
+<h2 class="section-title" id="classroom">Virtual Classroom</h2>
+<section class="classroom-mockup" id="classroom-section">
+<div class="whiteboard-panel" id="whiteboard">
+<div>
+<h3>📚 Welcome to the LoveEnglish.PL AI Virtual Classroom</h3>
+<p><strong>Status:</strong> Ready to begin</p>
+<p><strong>Instructions:</strong> Select a course from the dropdown below to load lesson content and discussion questions.</p>
+<p><strong>Features Available:</strong></p>
+<ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+<li>✓ Interactive Whiteboard</li>
+<li>✓ Real-time Chat</li>
+<li>✓ Screen Sharing</li>
+<li>✓ Voice/Video Call</li>
+<li>✓ File Sharing</li>
+<li>✓ Recording Capability</li>
+<li>✓ Breakout Rooms</li>
+<li>✓ Progress Tracking</li>
+</ul>
+</div>
+</div>
+<div class="content-panel">
+<h3>📖 Course Content</h3>
+<select id="courseSelector">
+<option value="">-- Choose a Course --</option>
+</select>
+<div id="questionContainer"></div>
+<div class="classroom-tools">
+<button class="tool-btn" id="shareScreenBtn">🖥️ Share Screen</button>
+<button class="tool-btn" id="uploadFileBtn">📎 Upload File</button>
+<button class="tool-btn" id="whiteboardBtn">✏️ Whiteboard</button>
+<button class="tool-btn" id="breakoutBtn">👥 Breakout Rooms</button>
+</div>
+</div>
+<div class="chat-panel">
+<h3>💬 Collaboration Area</h3>
+<div class="participant-list" id="participantList">
+<div class="participant">
+<div class="participant-avatar">SR</div>
+<span>Simon (Teacher)</span>
+<div class="participant-status"></div>
+</div>
+<div class="participant">
+<div class="participant-avatar" style="background: var(--future-cyan);">You</div>
+<span>Student</span>
+<div class="participant-status"></div>
+</div>
+</div>
+<textarea id="chatMessage" placeholder="Discuss the question with your teacher and peers..." aria-label="Chat message"></textarea>
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+<button style="flex: 1; background: var(--future-cyan); color: var(--deep-space); font-weight: bold;" id="sendMessageBtn">Send</button>
+<button style="flex: 1; background: var(--energy-orange); color: white; font-weight: bold;" id="voiceCallBtn">🎤 Voice</button>
+<button style="flex: 1; background: var(--poland-red); color: white; font-weight: bold;" id="videoCallBtn">📹 Video</button>
+</div>
+<div id="chatMessages" style="margin-top: 1rem; max-height: 200px; overflow-y: auto;" aria-live="polite"></div>
+<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0, 207, 200, 0.2);">
+<p style="font-size: 0.85rem; color: var(--light-accent);"><span class="recording-indicator" id="recordingIndicator" style="display: none;"></span><span id="recordingStatus">Recording: Off</span></p>
+<button class="tool-btn" id="toggleRecordingBtn" style="width: 100%; margin-top: 0.5rem;">🔴 Start Recording</button>
+</div>
+</div>
+</section>
+
+<section class="pricing" id="pricing">
+<h2 class="section-title">Choose Your Plan</h2>
+<div class="pricing-cards">
+<div class="pricing-card">
+<h3>Free Trial</h3>
+<div class="price">$0<span>/25 min</span></div>
+<ul class="features">
+<li>One 25-minute trial lesson</li>
+<li>Level assessment</li>
+<li>AI-powered feedback</li>
+<li>No credit card required</li>
+<li>Schedule flexibility</li>
+</ul>
+<button class="cta-button" data-plan="free">Start Free Trial</button>
+</div>
+<div class="pricing-card">
+<h3>Single Lesson</h3>
+<div class="price">$30<span>/lesson</span></div>
+<ul class="features">
+<li>One 60-minute lesson</li>
+<li>Personalized curriculum</li>
+<li>AI practice tools access</li>
+<li>Lesson recording</li>
+<li>Progress report</li>
+</ul>
+<button class="cta-button" data-plan="single">Book Lesson</button>
+</div>
+<div class="pricing-card featured">
+<h3>4 Lesson Package</h3>
+<div class="price">$110<span>/package</span></div>
+<ul class="features">
+<li>Four 60-minute lessons</li>
+<li>Save $10 vs single</li>
+<li>Priority scheduling</li>
+<li>All AI tools included</li>
+<li>Certificate per level</li>
+<li>Email support</li>
+</ul>
+<button class="cta-button" data-plan="package4">Get Started</button>
+</div>
+<div class="pricing-card">
+<h3>16 Lesson Package</h3>
+<div class="price">$400<span>/package</span></div>
+<ul class="features">
+<li>Sixteen 60-minute lessons</li>
+<li>Save $80 vs single</li>
+<li>Best value option</li>
+<li>Full course completion</li>
+<li>CEFR certification</li>
+<li>Priority support</li>
+<li>Job prep included</li>
+</ul>
+<button class="cta-button" data-plan="package16">Go Premium</button>
+</div>
+</div>
+</section>
+
+<section class="faq" id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="faq-item">
+<div class="faq-question" tabindex="0" role="button" aria-expanded="false">How does the AI-powered learning work?</div>
+<div class="faq-answer">Our system uses advanced natural language processing to personalize lessons based on your progress, strengths, and weaknesses. AI tutors provide instant feedback and adapt content in real-time.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" tabindex="0" role="button" aria-expanded="false">Can I cancel my subscription anytime?</div>
+<div class="faq-answer">Yes, you can cancel your package at any time. Unused lessons remain valid for 6 months from purchase date.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" tabindex="0" role="button" aria-expanded="false">Do you offer refunds?</div>
+<div class="faq-answer">We offer a full refund within 14 days of purchase if you're not satisfied with our service. After that period, refunds are considered on a case-by-case basis.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" tabindex="0" role="button" aria-expanded="false">What devices can I use?</div>
+<div class="faq-answer">Our platform works on all modern browsers on desktops, laptops, tablets, and smartphones. We also have dedicated iOS and Android apps available.</div>
+</div>
+</div>
+</section>
+
+<section class="about-section" id="about">
+<h2 class="section-title">About LoveEnglish.PL AI</h2>
+<div class="about-content">
+<div class="about-text">
+<h3>Bridging Cultures, Building Futures</h3>
+<p>Founded in 2023, LoveEnglish.PL AI is Poland's first AI-powered English learning platform designed specifically for professionals navigating the digital transformation era.</p>
+<p>Our mission is to empower Polish speakers with the linguistic and cognitive tools needed to thrive in globalized, AI-augmented environments.</p>
+<p>Our team combines experts in linguistics, artificial intelligence, and educational psychology to create truly innovative learning experiences.</p>
+</div>
+<div class="about-image">
+<div style="background: linear-gradient(45deg, var(--energy-orange), var(--future-cyan)); height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+Team Photo Placeholder
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="flag-strip"></div>
+<p>LoveEnglish.PL AI - Bridging Cultures, Building Futures. © 2024</p>
+<p>
+<a href="mailto:support@loveenglish.pl" class="contact-link">support@loveenglish.pl</a> |
+<a href="tel:+48221234567" class="contact-link">+48 22 123 4567</a>
+</p>
+<div class="footer-links">
+<a href="#privacy-modal" class="contact-link">Privacy Policy</a>
+<a href="#terms-modal" class="contact-link">Terms of Service</a>
+<a href="#contact-modal" class="contact-link">Contact Us</a>
+</div>
+</footer>
+
+<script>
+// Enhanced Legal documents content with Poland-specific requirements
+const privacyPolicyContent = `
+<h1>Privacy Policy</h1>
+<p><strong>Last Updated:</strong> January 1, 2024</p>
+
+<h2>1. Administrator Danych (Data Controller)</h2>
+<p>The Data Controller of your personal data is:</p>
+<p><strong>LoveEnglish.PL AI</strong><br>
+Customer Support Team<br>
+Warsaw, Poland<br>
+Email: support@loveenglish.pl<br>
+Phone: +48 22 123 4567</p>
+
+<h2>2. Information We Collect</h2>
+<h3>Personal Data</h3>
+<p>We may collect personal information that you voluntarily provide to us when registering on the Services, expressing an interest in obtaining information about us or our products and Services, when participating in activities on the Services, or otherwise contacting us.</p>
+<ul>
+<li>Personal Identifiers: Name, email address, phone number</li>
+<li>Account Information: Username, password, profile information</li>
+<li>Payment Information: Credit card details, billing address (processed securely through third-party payment processors)</li>
+<li>Technical Data: IP address, browser type, operating system</li>
+<li>Usage Data: Learning progress, course completion data, interaction metrics</li>
+</ul>
+
+<h2>3. Legal Basis for Processing (RODO/GDPR Compliance)</h2>
+<p>In accordance with the Regulation of the European Parliament and of the Council (EU) 2016/679 of 27 April 2016 (GDPR) and the Polish Act on the Protection of Personal Data, we process your personal data based on:</p>
+<ul>
+<li><strong>Consent</strong> (Article 6(1)(a) GDPR) - for marketing communications</li>
+<li><strong>Contract performance</strong> (Article 6(1)(b) GDPR) - for service delivery</li>
+<li><strong>Legal obligation</strong> (Article 6(1)(c) GDPR) - for tax and accounting purposes</li>
+<li><strong>Legitimate interests</strong> (Article 6(1)(f) GDPR) - for service improvement and security</li>
+</ul>
+
+<h2>4. Your Rights Under RODO/GDPR</h2>
+<p>Under the Polish Data Protection Act and GDPR, you have the right to:</p>
+<ul>
+<li><strong>Access your data</strong> - obtain information about data processing</li>
+<li><strong>Rectification</strong> - correct inaccurate or incomplete data</li>
+<li><strong>Erasure</strong> - request deletion of your data ("right to be forgotten")</li>
+<li><strong>Restriction of processing</strong> - limit how we use your data</li>
+<li><strong>Data portability</strong> - receive your data in a structured format</li>
+<li><strong>Object to processing</strong> - object to processing based on legitimate interests</li>
+<li><strong>Withdraw consent</strong> - withdraw previously given consent at any time</li>
+</ul>
+
+<h2>5. Data Retention Periods</h2>
+<p>We retain personal data only as long as necessary for the purposes outlined in this policy:</p>
+<ul>
+<li>Account data: Until account deletion request or 3 years of inactivity</li>
+<li>Payment data: 5 years for accounting purposes (as required by Polish tax law)</li>
+<li>Marketing data: Until consent withdrawal or 2 years from last interaction</li>
+<li>Technical data: 1 year for security and analytics purposes</li>
+</ul>
+
+<h2>6. Data Security Measures</h2>
+<p>We implement appropriate technical and organizational measures including:</p>
+<ul>
+<li>SSL encryption for data transmission</li>
+<li>Regular security assessments and audits</li>
+<li>Access controls and authentication mechanisms</li>
+<li>Data backup and disaster recovery procedures</li>
+<li>Employee training on data protection</li>
+</ul>
+
+<h2>7. International Data Transfers</h2>
+<p>Your data may be transferred outside the European Economic Area only to countries with adequate data protection levels or using appropriate safeguards such as Standard Contractual Clauses approved by the European Commission.</p>
+
+<h2>8. Supervisory Authority</h2>
+<p>You have the right to lodge a complaint with the Polish supervisory authority:</p>
+<p><strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong><br>
+Stawki 2, 00-193 Warsaw, Poland<br>
+Phone: +48 22 531 03 00<br>
+Email: kancelaria@uodo.gov.pl</p>
+
+<h2>9. Cookies and Tracking Technologies</h2>
+<p>We use cookies and similar technologies in compliance with the Polish Telecommunications Law and EU ePrivacy Directive. You can manage cookie preferences through your browser settings.</p>
+
+<h2>10. Contact Information</h2>
+<p>For any questions regarding this Privacy Policy or your personal data, please contact our Data Protection Officer at:</p>
+<p>Email: support@loveenglish.pl<br>
+Phone: +48 22 123 4567</p>
+`;
+
+const termsOfServiceContent = `
+<h1>Terms of Service</h1>
+<p><strong>Last Updated:</strong> January 1, 2024</p>
+
+<h2>1. Service Provider Information</h2>
+<p><strong>LoveEnglish.PL AI</strong><br>
+Customer Support Team<br>
+Warsaw, Poland<br>
+Email: support@loveenglish.pl<br>
+Phone: +48 22 123 4567</p>
+
+<h2>2. Agreement to Terms</h2>
+<p>By accessing or using LoveEnglish.PL AI ("the Services"), you agree to be bound by these Terms of Service and comply with Polish law, including the Act on Providing Services by Electronic Means of July 18, 2002.</p>
+
+<h2>3. Services Description</h2>
+<p>LoveEnglish.PL AI provides English language learning services through an AI-powered platform, including but not limited to:</p>
+<ul>
+<li>Interactive lessons and exercises</li>
+<li>AI-powered tutoring and feedback</li>
+<li>Progress tracking and analytics</li>
+<li>Community features and peer interaction</li>
+</ul>
+
+<h2>4. Consumer Rights (Polish Law Compliance)</h2>
+<h3>Right of Withdrawal</h3>
+<p>In accordance with the Polish Consumer Rights Act of May 30, 2014, consumers have the right to withdraw from the distance contract within 14 days without giving any reason.</p>
+
+<h3>Withdrawal Form</h3>
+<p>To exercise the right of withdrawal, you must inform us of your decision to withdraw by clear statement:</p>
+<p><strong>Withdrawal Form Template:</strong><br>
+To: LoveEnglish.PL AI, support@loveenglish.pl<br>
+I hereby give notice that I withdraw from my contract for the following service: [Service Name]<br>
+Ordered on: [Date]<br>
+Consumer name: [Your Name]<br>
+Consumer address: [Your Address]<br>
+Date: [Withdrawal Date]</p>
+
+<h3>Effects of Withdrawal</h3>
+<p>If you withdraw from this contract, we will reimburse all payments received from you without undue delay and in any event not later than 14 days from the day we are informed about your decision to withdraw.</p>
+
+<h2>5. Subscription and Payment Terms</h2>
+<h3>Free Trial</h3>
+<p>We offer a 25-minute free trial lesson for new users. No credit card required.</p>
+
+<h3>Lesson Packages</h3>
+<p>Fees are displayed in US Dollars ($) and include applicable VAT. All payments are processed through secure third-party payment processors.</p>
+
+<h3>Cancellation Policy</h3>
+<p>You may cancel your lesson package at any time. Unused lessons remain valid for 6 months from purchase date.</p>
+
+<h2>6. Complaint Procedure</h2>
+<p>In case of any complaints regarding the Services, please contact us at support@loveenglish.pl. We will respond to your complaint within 14 days.</p>
+<p>If we cannot resolve your complaint, you may use the European Online Dispute Resolution platform: <a href="http://ec.europa.eu/consumers/odr" target="_blank">http://ec.europa.eu/consumers/odr</a></p>
+
+<h2>7. Intellectual Property Rights</h2>
+<p>All content, features, and functionality of LoveEnglish.PL AI are owned by us and are protected by Polish and international copyright, trademark, and other intellectual property laws.</p>
+
+<h2>8. User Responsibilities</h2>
+<p>You agree not to:</p>
+<ul>
+<li>Use the Services for any unlawful purpose</li>
+<li>Harass, abuse, or harm other users</li>
+<li>Interfere with or disrupt the Services</li>
+<li>Attempt to gain unauthorized access to the Services</li>
+<li>Share your account credentials with others</li>
+</ul>
+
+<h2>9. Limitation of Liability</h2>
+<p>To the maximum extent permitted by Polish law, our liability for any claims arising from your use of the Services is limited to the amount you paid for the Services during the 12-month period preceding the claim.</p>
+
+<h2>10. Governing Law and Jurisdiction</h2>
+<p>These Terms shall be governed by and construed in accordance with the laws of Poland. Any disputes shall be subject to the exclusive jurisdiction of the courts of Warsaw, Poland.</p>
+
+<h2>11. Changes to Terms</h2>
+<p>We reserve the right to modify these Terms at any time. We will notify users of material changes via email or through the Services. Continued use after changes constitutes acceptance of the modified Terms.</p>
+
+<h2>12. Contact Information</h2>
+<p>For questions about these Terms, please contact us at support@loveenglish.pl or +48 22 123 4567.</p>
+`;
+
+// Improved security functions
+function sanitizeInput(input) {
+const div = document.createElement('div');
+div.textContent = input;
+return div.innerHTML;
+}
+
+// Secure CSRF token generation using crypto API
+function generateCSRFToken() {
+    try {
+        // Use crypto.getRandomValues for better security
+        const array = new Uint32Array(4);
+        window.crypto.getRandomValues(array);
+        return Array.from(array, dec => dec.toString(16)).join('');
+    } catch (e) {
+        // Fallback for older browsers
+        console.warn('Crypto API not available, using fallback');
+        return btoa(Math.random().toString(36).substring(2) + 
+                   Math.random().toString(36).substring(2));
+    }
+}
+
+// Safe DOM update function with additional sanitization
+function safeDOMUpdate(element, content) {
+    try {
+        if (typeof content === 'string') {
+            element.innerHTML = sanitizeInput(content);
+        } else {
+            element.textContent = content;
+        }
+    } catch (error) {
+        console.error('DOM update failed:', error);
+        element.textContent = 'Content unavailable';
+    }
+}
+
+// Enhanced form validation functions
+function validateField(field, validationFn, errorElementId) {
+    const errorElement = document.getElementById(errorElementId);
+    if (validationFn(field.value)) {
+        field.classList.remove('field-error');
+        field.parentElement.classList.remove('error');
+        if (errorElement) errorElement.style.display = 'none';
+        return true;
+    } else {
+        field.classList.add('field-error');
+        field.parentElement.classList.add('error');
+        if (errorElement) errorElement.style.display = 'block';
+        return false;
+    }
+}
+
+function validateName(name) {
+    return name.trim().length >= 2 && name.trim().length <= 100;
+}
+
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email) && email.length <= 254;
+}
+
+function validatePassword(password) {
+    // Enhanced password requirements: 12 chars, upper/lower/number/special
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/;
+    return regex.test(password);
+}
+
+function validateTerms(checkbox) {
+    return checkbox.checked;
+}
+
+// Course data structure with 16 themes
+const courseTitles = [
+"AI Basics & Interaction", "Effective Prompting Techniques", "AI-Powered Job Searching", "AI-Assisted Interviews",
+"AI Trend Analysis & Business Ideas", "Accessing Health Information", "AI for Personal Finance Basics",
+"AI-Powered Learning & Upskilling", "AI for Creative Tasks (Basic)", "Digital Well-being & Safety",
+"Future Work & Adaptability", "AI for Community Engagement", "Ethical Considerations of AI",
+"AI for Content Creation (Basic)", "AI for Language Learning (Self)", "Understanding AI Limitations & Bias"
+];
+
+const cefrLevels = ['A1', 'A2', 'B1', 'B2'];
+
+// Function to generate lesson summaries based on theme and level
+function generateLessonSummaries(courseTitle, level) {
+    const levelData = {
+        'A1': {
+            lessons: [
+                `Lesson ${getLessonNumber('A1', courseTitles.indexOf(courseTitle), 1)}: Basic ${courseTitle.split(':')[0] || courseTitle}`,
+                `Lesson ${getLessonNumber('A1', courseTitles.indexOf(courseTitle), 2)}: Practical ${courseTitle.split(':')[0] || courseTitle}`
+            ],
+            focus: "Foundational vocabulary and simple interactions"
+        },
+        'A2': {
+            lessons: [
+                `Lesson ${getLessonNumber('A2', courseTitles.indexOf(courseTitle), 1)}: Intermediate ${courseTitle.split(':')[0] || courseTitle}`,
+                `Lesson ${getLessonNumber('A2', courseTitles.indexOf(courseTitle), 2)}: Applied ${courseTitle.split(':')[0] || courseTitle}`
+            ],
+            focus: "Follow-up questions and practical applications"
+        },
+        'B1': {
+            lessons: [
+                `Lesson ${getLessonNumber('B1', courseTitles.indexOf(courseTitle), 1)}: Advanced ${courseTitle.split(':')[0] || courseTitle}`,
+                `Lesson ${getLessonNumber('B1', courseTitles.indexOf(courseTitle), 2)}: Strategic ${courseTitle.split(':')[0] || courseTitle}`
+            ],
+            focus: "Professional contexts and complex scenarios"
+        },
+        'B2': {
+            lessons: [
+                `Lesson ${getLessonNumber('B2', courseTitles.indexOf(courseTitle), 1)}: Expert ${courseTitle.split(':')[0] || courseTitle}`,
+                `Lesson ${getLessonNumber('B2', courseTitles.indexOf(courseTitle), 2)}: Mastery ${courseTitle.split(':')[0] || courseTitle}`
+            ],
+            focus: "Critical analysis and strategic implementation"
+        }
+    };
+
+    return levelData[level] || levelData['A1'];
+}
+
+// Helper function to calculate lesson numbers
+function getLessonNumber(level, themeIndex, lessonIndex) {
+    const levelOffsets = {'A1': 0, 'A2': 32, 'B1': 64, 'B2': 96};
+    const baseLesson = levelOffsets[level] + (themeIndex * 2) + lessonIndex;
+    return baseLesson > 128 ? baseLesson - 128 : baseLesson;
+}
+
+// Build navigation menu dynamically
+const coursesDropdown = document.getElementById('coursesDropdown');
+cefrLevels.forEach(level => {
+    const li = document.createElement('li');
+    li.className = 'dropdown-sub';
+    li.innerHTML = `<a href="#" aria-haspopup="true">${level} Level ▶</a>`;
+    const subMenu = document.createElement('ul');
+    subMenu.className = 'dropdown-sub-menu';
+    subMenu.setAttribute('role', 'menu');
+    courseTitles.forEach(title => {
+        const subLi = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.textContent = title;
+        a.setAttribute('data-level', level);
+        a.setAttribute('data-title', title);
+        a.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadCourseQuestions(title);
+        });
+        subLi.appendChild(a);
+        subMenu.appendChild(subLi);
+    });
+    li.appendChild(subMenu);
+    coursesDropdown.appendChild(li);
+});
+
+// Populate Course Selector in Classroom
+const courseSelector = document.getElementById('courseSelector');
+courseTitles.forEach(title => {
+    const option = document.createElement('option');
+    option.value = title;
+    option.textContent = title;
+    courseSelector.appendChild(option);
+});
+courseSelector.addEventListener('change', function(e) {
+    const title = e.target.value;
+    if (title) {
+        loadCourseQuestions(title);
+    }
+});
+
+// Learning Path Cards - Click to Expand
+const phaseCards = document.querySelectorAll('.phase-card');
+phaseCards.forEach(card => {
+    card.addEventListener('click', function() {
+        const isExpanded = this.classList.contains('expanded');
+
+        // Close all other cards
+        phaseCards.forEach(otherCard => {
+            if (otherCard !== this) {
+                otherCard.classList.remove('expanded');
+                otherCard.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Toggle current card
+        if (isExpanded) {
+            this.classList.remove('expanded');
+            this.setAttribute('aria-expanded', 'false');
+        } else {
+            this.classList.add('expanded');
+            this.setAttribute('aria-expanded', 'true');
+        }
+    });
+
+    // Keyboard support
+    card.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+        }
+    });
+});
+
+// Function to Generate and Display Lesson Summaries
+function loadCourseQuestions(title) {
+    const questionContainer = document.getElementById('questionContainer');
+    safeDOMUpdate(questionContainer, '');
+
+    const h4 = document.createElement('h4');
+    safeDOMUpdate(h4, `${title} - Lesson Overview:`);
+    h4.style.color = 'var(--future-cyan)';
+    h4.style.marginBottom = '1rem';
+    questionContainer.appendChild(h4);
+
+    const container = document.createElement('div');
+    container.style.display = 'grid';
+    container.style.gridTemplateColumns = 'repeat(auto-fit, minmax(250px, 1fr))';
+    container.style.gap = '1rem';
+    container.style.marginTop = '1rem';
+
+    cefrLevels.forEach(level => {
+        const levelCard = document.createElement('div');
+        levelCard.style.background = 'rgba(255, 255, 255, 0.05)';
+        levelCard.style.padding = '1rem';
+        levelCard.style.borderRadius = '8px';
+        levelCard.style.border = '1px solid rgba(0, 207, 200, 0.2)';
+
+        const levelHeader = document.createElement('h5');
+        safeDOMUpdate(levelHeader, `${level} Level`);
+        levelHeader.style.color = 'var(--energy-orange)';
+        levelHeader.style.marginBottom = '0.5rem';
+
+        const summaries = generateLessonSummaries(title, level);
+        const lessonsList = document.createElement('ul');
+        lessonsList.style.marginLeft = '1rem';
+
+        summaries.lessons.forEach(lesson => {
+            const li = document.createElement('li');
+            safeDOMUpdate(li, lesson);
+            li.style.fontSize = '0.9rem';
+            li.style.marginBottom = '0.25rem';
+            lessonsList.appendChild(li);
+        });
+
+        const focusPara = document.createElement('p');
+        safeDOMUpdate(focusPara, `Focus: ${summaries.focus}`);
+        focusPara.style.fontSize = '0.85rem';
+        focusPara.style.marginTop = '0.5rem';
+        focusPara.style.fontStyle = 'italic';
+        focusPara.style.color = 'var(--light-accent)';
+
+        levelCard.appendChild(levelHeader);
+        levelCard.appendChild(lessonsList);
+        levelCard.appendChild(focusPara);
+        container.appendChild(levelCard);
+    });
+
+    questionContainer.appendChild(container);
+
+    // Update whiteboard with sanitized content
+    const whiteboardContent = `
+    <div style="text-align: left; width: 100%;">
+    <h3 style="color: var(--uk-blue);">📚 Theme: ${sanitizeInput(title)}</h3>
+    <p><strong>Scope:</strong> Comprehensive coverage across all CEFR levels</p>
+    <p><strong>Total Lessons:</strong> 8 lessons (2 per level) covering fundamental to advanced concepts</p>
+    <p><strong>Learning Path:</strong> Progressive difficulty from A1 (beginner) to B2 (advanced)</p>
+    <p><strong>Current Status:</strong> <span style="color: var(--success-green);">● Ready to Start</span></p>
+    </div>
+    `;
+    document.getElementById('whiteboard').innerHTML = whiteboardContent;
+
+    // Scroll the classroom into view
+    document.getElementById('classroom-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Mobile menu toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    const isActive = navLinks.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    mobileMenu.setAttribute('aria-expanded', isActive);
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('header')) {
+        navLinks.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        mobileMenu.setAttribute('aria-expanded', 'false');
+    }
+});
+
+// Modal Functions
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    if (modalId === 'privacyModal') {
+        document.getElementById('privacyContent').innerHTML = privacyPolicyContent;
+    } else if (modalId === 'termsModal') {
+        document.getElementById('termsContent').innerHTML = termsOfServiceContent;
+    }
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+document.querySelectorAll('.close-modal').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        closeModal(modal.id);
+    });
+
+    closeBtn.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const modal = this.closest('.modal');
+            closeModal(modal.id);
+        }
+    });
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target.classList.contains('modal')) {
+        closeModal(event.target.id);
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const openModal = document.querySelector('.modal[style*="display: flex"]');
+        if (openModal) {
+            closeModal(openModal.id);
+        }
+    }
+});
+
+document.querySelectorAll('a[href="#privacy-modal"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal('privacyModal');
+    });
+});
+
+document.querySelectorAll('a[href="#terms-modal"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal('termsModal');
+    });
+});
+
+document.querySelectorAll('a[href="#contact-modal"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal('contactModal');
+    });
+});
+
+// Registration Form Handling
+const registrationForm = document.getElementById('registrationForm');
+const submitRegistration = document.getElementById('submitRegistration');
+
+function openRegistrationModal(plan = '') {
+    openModal('registrationModal');
+    if (plan) {
+        document.getElementById('regPlan').value = plan;
+    }
+}
+
+document.getElementById('regName').addEventListener('blur', function() {
+    validateField(this, validateName, 'nameError');
+});
+
+document.getElementById('regEmail').addEventListener('blur', function() {
+    validateField(this, validateEmail, 'emailError');
+});
+
+document.getElementById('regPassword').addEventListener('blur', function() {
+    validateField(this, validatePassword, 'passwordError');
+});
+
+document.getElementById('regTerms').addEventListener('change', function() {
+    validateField(this, validateTerms, 'termsError');
+});
+
+registrationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const nameValid = validateField(document.getElementById('regName'), validateName, 'nameError');
+    const emailValid = validateField(document.getElementById('regEmail'), validateEmail, 'emailError');
+    const passwordValid = validateField(document.getElementById('regPassword'), validatePassword, 'passwordError');
+    const termsValid = validateField(document.getElementById('regTerms'), validateTerms, 'termsError');
+
+    if (!(nameValid && emailValid && passwordValid && termsValid)) {
+        showNotification('Please correct the errors in the form', 'error');
+        return;
+    }
+
+    const name = document.getElementById('regName').value;
+    const plan = document.getElementById('regPlan').value;
+
+    const submitButton = document.getElementById('submitRegistration');
+    const originalText = submitButton.textContent;
+    submitButton.innerHTML = 'Processing... <span class="loading"></span>';
+    submitButton.disabled = true;
+
+    setTimeout(() => {
+        const csrfToken = generateCSRFToken();
+        showNotification(`Thank you ${sanitizeInput(name)}! Your registration for the ${plan} plan is being processed.`);
+
+        registrationForm.reset();
+        closeModal('registrationModal');
+
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+
+        if (plan === 'free') {
+            window.location.href = '/free-trial-confirmation';
+        } else if (plan === 'single') {
+            window.location.href = '/checkout/single';
+        } else if (plan === 'package4') {
+            window.location.href = '/checkout/package4';
+        } else if (plan === 'package16') {
+            window.location.href = '/checkout/package16';
+        }
+    }, 1500);
+});
+
+// Chat functionality
+const sendMessageBtn = document.getElementById('sendMessageBtn');
+const chatMessage = document.getElementById('chatMessage');
+const chatMessages = document.getElementById('chatMessages');
+
+sendMessageBtn.addEventListener('click', () => {
+    const message = chatMessage.value.trim();
+    if (message) {
+        const messageElement = document.createElement('div');
+        messageElement.style.padding = '0.5rem';
+        messageElement.style.marginBottom = '0.5rem';
+        messageElement.style.background = 'rgba(0, 207, 200, 0.1)';
+        messageElement.style.borderRadius = '5px';
+        safeDOMUpdate(messageElement, `You: ${sanitizeInput(message)}`);
+        chatMessages.appendChild(messageElement);
+        chatMessage.value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simulate teacher response
+        setTimeout(() => {
+            const responseElement = document.createElement('div');
+            responseElement.style.padding = '0.5rem';
+            responseElement.style.marginBottom = '0.5rem';
+            responseElement.style.background = 'rgba(255, 107, 53, 0.1)';
+            responseElement.style.borderRadius = '5px';
+            safeDOMUpdate(responseElement, `Teacher: Great question! Let me help you with that.`);
+            chatMessages.appendChild(responseElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
+    }
+});
+
+// Enter key to send message
+chatMessage.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessageBtn.click();
+    }
+});
+
+// Classroom tools
+document.getElementById('shareScreenBtn').addEventListener('click', () => {
+    showNotification('Screen sharing feature - requires browser permission');
+});
+
+document.getElementById('uploadFileBtn').addEventListener('click', () => {
+    showNotification('File upload feature - select a document to share');
+});
+
+document.getElementById('whiteboardBtn').addEventListener('click', () => {
+    showNotification('Interactive whiteboard activated');
+});
+
+document.getElementById('breakoutBtn').addEventListener('click', () => {
+    showNotification('Breakout rooms feature - create small group sessions');
+});
+
+// Voice/Video call buttons
+document.getElementById('voiceCallBtn').addEventListener('click', () => {
+    showNotification('Voice call initiated - connecting...');
+});
+
+document.getElementById('videoCallBtn').addEventListener('click', () => {
+    showNotification('Video call initiated - connecting...');
+});
+
+// Recording toggle
+let isRecording = false;
+document.getElementById('toggleRecordingBtn').addEventListener('click', function() {
+    isRecording = !isRecording;
+    const indicator = document.getElementById('recordingIndicator');
+    const status = document.getElementById('recordingStatus');
+    if (isRecording) {
+        indicator.style.display = 'inline-block';
+        status.textContent = 'Recording: On';
+        this.textContent = '⏹️ Stop Recording';
+        this.style.background = 'var(--error-red)';
+        showNotification('Recording started');
+    } else {
+        indicator.style.display = 'none';
+        status.textContent = 'Recording: Off';
+        this.textContent = '🔴 Start Recording';
+        this.style.background = 'var(--future-cyan)';
+        this.style.color = 'var(--deep-space)';
+        showNotification('Recording saved');
+    }
+});
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    question.addEventListener('click', () => {
+        const wasActive = item.classList.contains('active');
+
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        item.classList.toggle('active');
+        question.setAttribute('aria-expanded', (!wasActive).toString());
+    });
+
+    question.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            question.click();
+        }
+    });
+});
+
+// Notification system
+function showNotification(message, type = 'success') {
+    const notification = document.getElementById('notification');
+    safeDOMUpdate(notification, message);
+    notification.className = 'notification';
+    if (type === 'error') {
+        notification.classList.add('error');
+    }
+    notification.style.display = 'block';
+
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.style.position = 'absolute';
+    announcement.style.left = '-10000px';
+    safeDOMUpdate(announcement, message);
+    document.body.appendChild(announcement);
+
+    setTimeout(() => {
+        notification.style.display = 'none';
+        document.body.removeChild(announcement);
+    }, 5000);
+}
+
+// Button event listeners
+document.getElementById('startTrialBtn').addEventListener('click', () => {
+    openRegistrationModal('free');
+});
+
+document.querySelectorAll('[data-plan]').forEach(button => {
+    button.addEventListener('click', (e) => {
+        const plan = e.target.getAttribute('data-plan');
+        openRegistrationModal(plan);
+    });
+});
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            mobileMenu.setAttribute('aria-expanded', 'false');
+        }
+    });
+});
+
+// Initialize FAQ accessibility
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.setAttribute('aria-expanded', 'false');
+});
+</script>
+</body>
+</html>
+```
